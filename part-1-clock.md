@@ -31,16 +31,16 @@ Ben Eater has simplified the circuit even better in his 8-bit video series.
 | **Monostable** | 1 | Rests low, makes one pulse when triggered, then returns | One-shot pulse, delay, debounce |
 | **Bistable** | 2 | Stays high or low until pushed to the other | Switch / memory (an SR latch) |
 
-[i. Astable 555 timer video](https://www.youtube.com/watch?v=kRlSFm519Bo&list=PLowKtXNTBypGqImE405J2565dvjafglHU&index=2)
+[i. Astable 555 timer](https://www.youtube.com/watch?v=kRlSFm519Bo&list=PLowKtXNTBypGqImE405J2565dvjafglHU&index=2)
 
 ![Astable Diagram](Image-assets/part-1-clock/555-astable-circuit.webp)
 
 
-[ii. Monostable 555 timer video](https://www.youtube.com/watch?v=81BgFhm2vz8)
+[ii. Monostable 555 timer](https://www.youtube.com/watch?v=81BgFhm2vz8)
 
 ![Monostable Diagram](Image-assets/part-1-clock/555-monostable-circuit.webp)
 
-[iii. Bistable 555 timer video](https://www.youtube.com/watch?v=WCwJNnx36Rk)
+[iii. Bistable 555 timer](https://www.youtube.com/watch?v=WCwJNnx36Rk)
 
 ![Bistable Diagram](Image-assets/part-1-clock/555_bistable_circuit.webp)
 

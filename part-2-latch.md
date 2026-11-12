@@ -1,13 +1,15 @@
-A latch is a sequential asynchronous circuit. Sequential means - whose output depends on the current inputs and the past (stored state), not just the inputs. And asynchronous means doesn't depend on the clock.
+A latch is a sequential asynchronous circuit. Sequential means - whose output depends on the current inputs and the past (stored state), not just the inputs. And asynchronous in a way because the value latched in it doesn't change with the change in the clock cycle. But this doesn't mean, we cannot use clock's high rise/low rise (edge) to trigger the latch. You will see what I meant when we look at the simultaion result.
 
-Here is the diffrence:
+Diffrence between Combinational and Sequential:
 
 ```shell
 Combinational: Output = f(Inputs)
-  Examples: adder, selector, XOR. Same inputs always give the same output.
+  Examples: adder, selector, XOR. 
+  # Same inputs always give the same output.
 
 Sequential: Output = f(Inputs, Stored state)
-  Examples: latch, flip-flop, register, counter. Same inputs can give different outputs.
+  Examples: latch, flip-flop, register, counter. 
+  # Same inputs can give different outputs.
   ```
 ## [1. S-R latch](https://www.youtube.com/watch?v=KM0DdEaY5sY&list=PLowKtXNTBypGqImE405J2565dvjafglHU&index=6)
 
@@ -17,7 +19,7 @@ S-R latch has set and reset pins, when SET is high, the output is Q and when RES
 ![S R latch with enable](Image-assets/part-2-latch/S-R-latch-with-Enable.png)
 
 ## [2. D latch](https://www.youtube.com/watch?v=peCh_859q7Q)
-If we invert the reset pin of S-R latch with enable, we get the D latch.
+If we invert the reset pin of `S-R latch with enable`, we get the D latch.
 ![D-latch](Image-assets/part-2-latch/D-Latch.png)
 
 

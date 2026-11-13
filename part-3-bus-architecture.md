@@ -38,6 +38,24 @@ WITH 3-STATE OUTPUTS](https://www.ti.com/lit/ds/symlink/sn74ls173a.pdf?ts=179436
 
 Here I will try to build the 8-bit register using the combination of  two SN74LS173A (4 bit D-Type FlipFlop) and one 74LS245(Tri-State Buffer) as described by Ben in his video.
 
+Let's look at the gut of 74173 IC first: 
+![74173 PIN](Image-assets/part-3-bus-architecture/74173-pin.png)
+
+Other than the obvious pins, few pins might look confusing. The DE1(9) and DE2(10) pins are the Data Enable pin. Datasheet details about it more clearly. OE1(1) and OE2(2) are the output control - they basially control the tri-state buffer but as we are uisng the 74245 for that, I will ground these two pins in my case.
+
+Moving on to 74245, here is how it looks in the `Digital` simulation.
+![74245-pin](Image-assets/part-3-bus-architecture/74245-pin.png)
+
+There are two important things to notice on this IC:
+* DIR (1) - It controls the flow of data
+    * D High - A to B
+    * D Low - B to A
+* If OE' is high, the output will be high impedence, meaning the register will be disconnected from the bus.
+
+Now let's look at the complete circuit and its simulation.
+
+![8 bit register and simulation](Image-assets/part-3-bus-architecture/8-bit-register-simulation.gif)
+
 
 
 
